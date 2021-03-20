@@ -1,28 +1,28 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="es" >
    <head>
-           <meta charset="utf-8">
+      <meta charset="utf-8">
       <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
       <!-- <title>Menú de navegación responsive</title> -->
       <link rel="stylesheet" href="style.css">
       <script src="https://kit.fontawesome.com/a076d05399.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <style>@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-	*{  
+         *{  
          text-align: center;
          margin: 0;
          padding: 0;
          box-sizing: border-box;
          font-family: 'Poppins', sans-serif;
-		 text-color:white;
-		 text-decoration: none; 
+         text-color:white;
          } 
-		 a{text-decoration:none; color:cyan;}
-		 body{background-color:black; 		 color:white;
-		 }
-		 body{background-color:black; 		 color:white;
-		 }
-         nav{
+		          P{ text-decoration:none;color:cyan;}
+
+         a{ color:cyan;}
+       
+         body{background-color:black; 		 color:white;
+         }
+             nav{
          display: flex;
          height: 80px;
          width: 100%;
@@ -31,32 +31,26 @@
          justify-content: space-between;
          padding: 0 50px 0 100px;
          flex-wrap: wrap;
-		 		 text-color:white;
-
          }
          nav .logo{
          color: #fff;
          font-size: 35px;
-         font-weight: 600;		 text-color:white;
-
+         font-weight: 600;
          }
          nav ul{
          display: flex;
          flex-wrap: wrap;
-         list-style: none;		 text-color:white;
-
+         list-style: none;
          }
          nav ul li{
-         margin: 0 5px;		 text-color:white;
-
+         margin: 0 5px;
          }
          nav ul li a{
          color: #f2f2f2;
          text-decoration: none;
          font-size: 18px;
          font-weight: 500;
-         padding: 8px 15px;		 text-color:white;
-
+         padding: 8px 15px;
          border-radius: 5px;
          letter-spacing: 1px;
          transition: all 0.3s ease;
@@ -64,29 +58,23 @@
          nav ul li a.active,
          nav ul li a:hover{
          color: #111;
-         background: #fff;		 text-color:white;
-
+         background: #fff;
          }
          nav .menu-btn i{
          color: #fff;
          font-size: 22px;
          cursor: pointer;
-         display: none;		 text-color:white;
-
+         display: none;
          }
          input[type="checkbox"]{
-         display: none;		 text-color:white;
-
+         display: none;
          }
-		 <--!   @media (max-width: 3000){-->
-         @media {
+         @media (max-width: 1000px){
          nav{
          padding: 0 40px 0 50px;
          }
          }
-		 		 <--! puedes cambiarlos  @media (max-width: 3000){-->
-
-         @media  {
+         @media (max-width: 3000px) {
          nav .menu-btn i{
          display: block;
          position: fixed;
@@ -96,8 +84,7 @@
          }
          nav ul{
          position: fixed;
-         top: 80px;		 text-color:white;
-
+         top: 80px;
          left: -100%;
          background: #111;
          height: 100vh;
@@ -110,17 +97,14 @@
          left: 0;
          }
          nav ul li{
-         width: 100%;		 text-color:white;
-
+         width: 100%;
          margin: 40px 0;
          }
          nav ul li a{
          width: 100%;
          margin-left: -100%;
-         display: block;		 text-color:white;
-
-         font-size: 20px;		 text-color:white;
-
+         display: block;
+         font-size: 20px;
          transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
          }
          #click:checked ~ ul li a{
@@ -129,8 +113,7 @@
          nav ul li a.active,
          nav ul li a:hover{
          background: none;
-         color: cyan;		 text-color:white;
-
+         color: cyan;
          }
          }
          .content{
@@ -143,230 +126,220 @@
          width: 100%;
          padding: 0 30px;
          color: #1b1b1b;
-		 background-color:black;		 text-color:white;
-
          }
          .content div{
          font-size: 40px;
-         font-weight: 700;		 background-color:black;
-		 text-color:white;
-
+         font-weight: 700;
          }
       </style>
    </head>
-   <body>  
-  <nav>
+   <body><p><a id="menu" href="#menu"> Menú Principal / </a><a href="#contenido1">Ir a Contenido1 > </a><a href="#contenido2">Ir a Contenido2 > </a><a href="#contenido3">/ > Ir a contenido3 </a><a href="#acercade">/ > Acerca de </a>
+         </p>
+      <nav>
          <div class="logo">
-            <div>Proyecto Webapp </div>
-         </div>	 
-		        <p><a id="menu" href="#menu"> Menú Principal / </a><a href="#contenido1">Ir a Contenido1 > </a><a href="#contenido2">Ir a Contenido2 > </a><a href="#contenido3">/ > Ir a contenido3 </a><a href="#acercade">/ > Acerca de </a></p>
-
-         <input type="checkbox" id="click">
-         <label for="click" class="menu-btn">
-         <i class="fas fa-bars"></i>
+            Proyecto Webapp
+         </div>
+         <input type="checkbox" id="click"><label for="click" class="menu-btn"><i class="fas fa-bars"></i>
          </label>
          <ul>
             <li><a class="active" href="#menu">Menu</a></li>
             <li><a href="#inicio">Inicio</a></li>
-			            <li><a href="#contenido1">Contenido1</a></li>
-
+            <li><a href="#contenido1">Contenido1</a></li>
             <li><a href="#contenido2">Contenido2</a></li>
-						            <li><a href="#contenido3">Contenido3</a></li>
-
+            <li><a href="#contenido3">Contenido3</a></li>
             <li><a href="#acercade">Acerca de</a></li>
          </ul>
       </nav>
       <div >
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-
-
-
+         <br>
+         <br>
+         <br>
+         <br>
          <h1 id="inicio">Inicio</h1>
-		  <p><a href="#menu"> Menú Principal / </a>
-         <a href="#contenido1">Ir a Contenido1 > </a>
-         <a href="#contenido2">Ir a Contenido2 > </a><a href="#contenido3">/ > Ir a contenido3 </a>
+         <p><a href="#menu"> Menú Principal / </a>
+            <a href="#contenido1">Ir a Contenido1 > </a>
+            <a href="#contenido2">Ir a Contenido2 > </a><a href="#contenido3">/ > Ir a contenido3 </a>
          </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br> Inicio<br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br> Inicio<br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
          </p>
-		 <p>
+         <p>
          <h1 id="contenido1">Contenido 1</h1>
          <a href="#menu"> Menú Principal / </a><a href="#inicio">< Volver a Inicio / </a><a href="#contenido2">Ir a contenido2></a><a href="#contenido3">/ > Ir a contenido3 </a>
          </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br> Contenido 1<br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br> Contenido 1<br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
          </p>
          <h1 id="contenido2">Contenido 2</h1>
-          <p><a href="#menu"> Menú Principal / </a><a href="#inicio"> Volver a inicio </a><a href="#contenido1">/ < Ir a contenido1 </a><a href="#contenido3">/ > Ir a contenido3 </a>
+         <p><a href="#menu"> Menú Principal / </a><a href="#inicio"> Volver a inicio </a><a href="#contenido1">/ < Ir a contenido1 </a><a href="#contenido3">/ > Ir a contenido3 </a>
          </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br> Contenido 2<br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br> Contenido 2<br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
          <p>
-		   <h1 id="contenido3">Contenido 3</h1>
-          <a href="#menu"> Menú Principal / </a><a href="#inicio"> Volver a inicio </a><a href="#contenido1">/ < Ir a contenido1 </a><a href="#contenido2">/ < Ir a contenido2 </a>
+         <h1 id="contenido3">Contenido 3</h1>
+         <a href="#menu"> Menú Principal / </a><a href="#inicio"> Volver a inicio </a><a href="#contenido1">/ < Ir a contenido1 </a><a href="#contenido2">/ < Ir a contenido2 </a>
          </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br> Contenido 3<br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br> Contenido 3<br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
          </p>
-		   <p><h1 id="acercade">Acerca de</h1>
-          <a href="#menu"> Menú Principal / </a><a href="#inicio"> Volver a inicio </a><a href="#contenido1">/ < Ir a contenido1 </a><a href="#contenido2">/ < Ir a contenido2 </a><a href="#contenido3">/ < Ir a contenido3 </a><a href="#acercade">/ < Acerca de</a>
+         <p>
+         <h1 id="acercade">Acerca de</h1>
+         <a href="#menu"> Menú Principal / </a><a href="#inicio"> Volver a inicio </a><a href="#contenido1">/ < Ir a contenido1 </a><a href="#contenido2">/ < Ir a contenido2 </a><a href="#contenido3">/ < Ir a contenido3 </a><a href="#acercade">/ < Acerca de</a>
          </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br> Acerca de<br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br> Acerca de<br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
          </p>
       </div>
-   </body> 
+   </body>
+   </html>
