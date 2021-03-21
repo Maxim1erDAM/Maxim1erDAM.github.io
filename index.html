@@ -16,8 +16,7 @@
          font-family: 'Poppins', sans-serif;
          text-color:white;
          } 
-		          P{ text-decoration:none;color:cyan;}
-
+		       
          a{ color:cyan;}
        
          body{background-color:black; 		 color:white;
@@ -63,7 +62,8 @@
          nav .menu-btn i{
          color: #fff;
          font-size: 22px;
-         cursor: pointer;
+         cursor: pointer;  position:center;
+
          display: none;
          }
          input[type="checkbox"]{
@@ -103,13 +103,13 @@
          }
          nav ul li a{
          width: 100%;
-         margin-left: -100%;
+         margin-left: -50%;
          display: block;
          font-size: 20px;
          transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
          }
          #click:checked ~ ul li a{
-         margin-left: 0px;
+         margin-left: 0px;       
          }
          nav ul li a.active,
          nav ul li a:hover{
@@ -140,10 +140,10 @@
          <div class="logo">
             Proyecto Webapp
          </div> 
-		 <div class="nav">
-            <p><a id="menu" href="#menu"> Menú Principal / </a><a href="#contenido1">Ir a Contenido1 > </a><a href="#contenido2">Ir a Contenido2 > </a><a href="#contenido3">/ > Ir a contenido3 </a><a href="#acercade">/ > Acerca de </a>
-         </p>
-         </div>
+            <li><p><a id="menu" href="#menu"> Menú Principal / </a><a href="#contenido1">Ir a Contenido1 > </a><a href="#contenido2">Ir a Contenido2 > </a><a href="#contenido3">/ > Ir a contenido3 </a><a href="#acercade">/ > Acerca de </a>
+         </p></li>
+		 
+       
          <input type="checkbox" id="click"><label for="click" class="menu-btn"><i class="fas fa-bars"></i>
          </label>
          <ul>
